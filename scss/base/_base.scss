@@ -1,0 +1,42 @@
+
+/* Box -Sizing Declaration
+========================================================================== */
+
+/**
+* 
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* General Styles
+========================================================================== */
+
+/**
+* 
+*/
+
+html {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+body{
+    background-color: $gray;
+    font-family: $font-family--primary;
+    
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font-family--secondary;
+}
+

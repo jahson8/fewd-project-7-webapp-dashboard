@@ -1,0 +1,49 @@
+/*Site-Header Styles
+========================================================================== */
+
+/**
+* 
+*/
+
+.site-header {
+    display: flex;
+    align-items: center;
+    background-color: $violet-blue;
+    color: $white;
+    h1{
+     font-size:1.5em; 
+     margin-left: 1em;  
+    }
+    h3 {
+        font-size: .85em;
+        font-weight: $font-weight--normal;
+        margin-right: 1em;
+    }
+
+    
+}
+
+.trademark{
+    font-size: .4em;
+    margin-top: -10px;
+}
+
+.bell{
+    width: 50px;
+    margin-left: auto;
+    border-right: 1px solid;
+    padding-right: 1em;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    margin-left: 1em;
+    margin-right: 1em;
+    width: 50px;
+}
+
+.thin {
+    font-weight: $font-weight--normal;
+}
+
+
