@@ -6,6 +6,37 @@
 */
 
 
+.sidebar {
+   background-color: $purple-navy;
+   padding: .7em;
+   ul {
+    display: flex;
+    justify-content: center;
+   }
 
+   li {
+       flex-basis: 10%;
+   }
+
+   li + li {
+       margin-left: 1.5em;
+   }
+
+
+   @media(min-width: 769px){
+       ul {
+           flex-direction: column;
+       }
+
+       li + li {
+           margin-left: 0;
+       }
+
+       li {
+        margin-top: 1.5em;
+       }
+   }
+   
+}
 
 
