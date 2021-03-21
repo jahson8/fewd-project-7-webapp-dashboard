@@ -31,7 +31,7 @@
 @media(min-width: 768px){
 
     .grid-container{
-        grid-template-columns: 70px 1fr;
+        grid-template-columns: 55px 1fr;
         grid-template-areas:    "header header"
                                 "nav main";
         grid-column-gap: 1em;

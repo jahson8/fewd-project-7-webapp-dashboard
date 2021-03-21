@@ -1,0 +1,53 @@
+/* Social Section
+========================================================================== */
+
+/**
+* 
+*/
+.social {
+    &-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-container {
+        display: flex;
+        margin-bottom: 1em;
+        width: 90vw;
+    }
+
+    &-image {
+        width: 30%;
+        align-self: center;
+    }
+
+    &-text {
+        margin-left: 1em;
+        align-self: flex-start;
+        P {
+            font-size: 1.5rem;
+            margin-bottom: -1rem;
+        }
+
+        &:last-child{
+            font-size: 3rem;
+        }
+    }
+
+    &-icn{
+        fill: $purple-navy;
+    }
+
+    @media(min-width: 768px){
+        &-div {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        &-container{
+            width: 30vw;
+        }
+    }
+}
