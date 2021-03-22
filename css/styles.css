@@ -571,17 +571,34 @@ a {
 * 
 */
 .message {
-  border: 2px solid #a7a7a7; }
+  border: 2px solid #a7a7a7;
+  padding-bottom: 1em; }
 
-/*card 
-========================================================================== */
-/**
-* 
-*/
-.card {
-  background-color: #fff;
+.widget-container {
+  width: 95%;
+  margin: 0 auto; }
+
+.form-field,
+.form-area,
+#send {
+  width: 100%;
   border-radius: 5px;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);
-  padding: 1em; }
+  border: none; }
+
+#userField,
+#messageField {
+  padding: 16px;
+  display: block;
+  background-color: #f5f5f5;
+  margin-bottom: 1em; }
+
+#messageField {
+  height: 150px; }
+
+#send {
+  padding: 15px 32px;
+  background-color: #7477bf;
+  color: #fff;
+  cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */

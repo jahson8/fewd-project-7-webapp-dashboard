@@ -17,15 +17,15 @@
               </svg>             
             <div id="notification"></div>
         </div>
-        <img class="profile-pic"src="images/member-1.jpg" alt="Student profile pic">
+        <img class="profile-pic" src="images/member-1.jpg" alt="Student profile pic">
         <h3>Student Name</h3>
     </header>
     <nav class="sidebar">
         <ul>
             <li><a href=""><img src="icons/icon-dashboard.svg" alt="dashboard"></a></li>
-            <li><a href=""><img src="icons/icon-visits.svg" alt=""></a></li>
-            <li><a href=""><img src="icons/icon-members.svg" alt=""></a></li>
-            <li><a href=""><img src="icons/icon-settings.svg" alt=""></a></li>
+            <li><a href=""><img src="icons/icon-visits.svg" alt="visit"></a></li>
+            <li><a href=""><img src="icons/icon-members.svg" alt="members"></a></li>
+            <li><a href=""><img src="icons/icon-settings.svg" alt="settings"></a></li>
         </ul>
     </nav>
     <main class="main">
@@ -38,7 +38,7 @@
             </div>
 
             <!-- Traffic Widget line graph section -->
-            <section class="traffic card">
+            <section class="traffic">
                 <div class="traffic-header">
                     <h3>Traffic</h3>
                     <ul class="traffic-nav">
@@ -55,7 +55,7 @@
             </section>
 
             <!-- Daily traffic widget bar graph -->
-            <section class="daily card">
+            <section class="daily">
                 <h3>Daily Traffic</h3>
                 <div class="widget-container-half">
                     <!-- bar graph for daily traffic -->
@@ -63,7 +63,7 @@
                 </div>
             </section>
 
-            <section class="mobile card">
+            <section class="mobile">
                 <h3>Mobile Users</h3>
                 <div class="widget-container-half">
                     <!-- donut graph for mobile users traffic -->
@@ -74,7 +74,7 @@
             <section class="social">
                 <h3>Social Stats</h3>
                 <div class="social-div">
-                <div class="social-container card">
+                <div class="social-container">
                     <div class="social-image">
                     <!-- inline SVG not included for brevity -->
                     <svg class="social-icn" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -86,7 +86,7 @@
                         <span>10,320</span>
                     </div>
                 </div>
-                <div class="social-container card">
+                <div class="social-container">
                     <div class="social-image">
                     <!-- inline SVG not included for brevity -->
                     <svg class="social-icn" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -99,7 +99,7 @@
                     </div>
                 </div>
 
-                <div class="social-container card">
+                <div class="social-container">
                     <div class="social-image">
                     <!-- inline SVG not included for brevity -->
                     <svg class="social-icn"  viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -116,102 +116,107 @@
 
         <section class="members">
             <h3>New Members</h3>
-            <div class="members-container">
-                <img src="images/member-1.jpg"
-                class="profile-image">
-                <div class="members-text">
-                    <p>Victoria Chambers</p>
-                    <a href="#">victoria.chambers80@example.com</a>
+            <div class="members-containers ">
+                <div class="members-container">
+                    <img src="images/member-1.jpg"
+                    class="profile-image">
+                    <div class="members-text">
+                        <p>Victoria Chambers</p>
+                        <a href="#">victoria.chambers80@example.com</a>
+                    </div>
+                    <p>10/15/20</p>
+                </div> 
+                
+                <div class="members-container">
+                    <img src="images/member-2.jpg"
+                    class="profile-image">
+                    <div class="members-text">
+                        <p>Dale Byrd</p>
+                        <a href="#">dale.byrd52@example.com</a>
+                    </div>
+                    <p>10/15/20</p>
+                </div> 
+                
+                <div class="members-container">
+                    <img src="images/member-3.jpg"
+                    class="profile-image">
+                    <div class="members-text">
+                        <p>Dawn Wood</p>
+                        <a href="#">dawn.wood16@example.com</a>
+                    </div>
+                    <p>10/15/20</p>
                 </div>
-                <p>10/15/20</p>
-            </div> 
-            
-            <div class="members-container">
-                <img src="images/member-2.jpg"
-                class="profile-image">
-                <div class="members-text">
-                    <p>Dale Byrd</p>
-                    <a href="#">dale.byrd52@example.com</a>
-                </div>
-                <p>10/15/20</p>
-            </div> 
-            
-            <div class="members-container">
-                <img src="images/member-3.jpg"
-                class="profile-image">
-                <div class="members-text">
-                    <p>Dawn Wood</p>
-                    <a href="#">dawn.wood16@example.com</a>
-                </div>
-                <p>10/15/20</p>
-            </div>
 
-            <div class="members-container">
-                <img src="images/member-4.jpg"
-                class="profile-image">
-                <div class="members-text">
-                    <p>Dan Oliver</p>
-                    <a href="#">dan.oliver82@example.com</a>
+                <div class="members-container">
+                    <img src="images/member-4.jpg"
+                    class="profile-image">
+                    <div class="members-text">
+                        <p>Dan Oliver</p>
+                        <a href="#">dan.oliver82@example.com</a>
+                    </div>
+                    <p>10/15/20</p>
                 </div>
-                <p>10/15/20</p>
             </div>
         </section> 
 
          <!-- recent activity widget -->
          <section class="activity">
             <h3>Recent Activity</h3>
-            <div class="members-container">
-                <a href="#">
-                    <img src="images/member-1.jpg"
-                    class="profile-image">
-                    <div class="members-text">
-                        <p>Victoria Chambers commented on WebApp's SEO Tips</p>
-                        <p>4 hours ago</p>
-                    </div>
-                    <p>&gt;</p>
-                </a>
-            </div> 
-            
-            <div class="members-container">
-                <a href="#">
-                    <img src="images/member-2.jpg"
-                    class="profile-image">
-                    <div class="members-text">
-                        <p>Dale Byrd liked the post Facebook's Changes for 2021</p>
-                        <p>5 hours ago</p>
-                    </div>
-                    <p>&gt;</p>
-                </a>
-            </div> 
-            
-            <div class="members-container">
-                <a href="#">
-                    <img src="images/member-3.jpg"
-                    class="profile-image">
-                    <div class="members-text">
-                        <p>Dawn Wood liked the post Facebook's Changes for 2021</p>
-                        <p>5 hours ago</p>
-                    </div>
-                    <p>&gt;</p>
-                </a>
-            </div> 
+            <div class="acitvity-containers">
+                <div class="activity-container">
+                    <a href="#">
+                        <img src="images/member-1.jpg"
+                        class="profile-image">
+                        <div class="members-text">
+                            <p>Victoria Chambers commented on WebApp's SEO Tips</p>
+                            <p>4 hours ago</p>
+                        </div>
+                        <p class="arrow">&gt;</p>
+                    </a>
+                </div> 
+                
+                <div class="activity-container">
+                    <a href="#">
+                        <img src="images/member-2.jpg"
+                        class="profile-image">
+                        <div class="members-text">
+                            <p>Dale Byrd liked the post Facebook's Changes for 2021</p>
+                            <p>5 hours ago</p>
+                        </div>
+                        <p class="arrow">&gt;</p>
+                    </a>
+                </div> 
+                
+                <div class="activity-container">
+                    <a href="#">
+                        <img src="images/member-3.jpg"
+                        class="profile-image">
+                        <div class="members-text">
+                            <p>Dawn Wood liked the post Facebook's Changes for 2021</p>
+                            <p>5 hours ago</p>
+                        </div>
+                        <p class="arrow">&gt;</p>
+                    </a>
+                </div> 
 
-            <div class="members-container">
-                <a href="#">
-                    <img src="images/member-4.jpg"
-                    class="profile-image">
-                    <div class="members-text">
-                        <p>Dan Oliver posted WebApp's SEO Tips</p>
-                        <p>1 day ago</p>
-                    </div>
-                    <p>&gt;</p>
-                </a>
+                <div class="activity-container">
+                    <a href="#">
+                        <img src="images/member-4.jpg"
+                        class="profile-image">
+                        <div class="members-text">
+                            <p>Dan Oliver posted WebApp's SEO Tips</p>
+                            <p>1 day ago</p>
+                        </div>
+                        <p class="arrow">&gt;</p>
+                    </a>
+                </div>
             </div> 
         </section>        
             <!-- messaging widget -->
     <section class="message">
-        <h3>Message User</h3>
+        
         <form class="widget-container">
+            <h3>Message User</h3>
             <input type="text" placeholder="Search for user"
             class="form-field" id="userField">
             <textarea placeholder="Message for user" class="form-area"
