@@ -29,7 +29,7 @@ html {
 }
 
 body{
-    background-color: $gray;
+    background-color: $white;
     font-family: $font-family--primary;
     
 }
@@ -42,5 +42,10 @@ h1,
 h2,
 h3 {
     font-family: $font-family--secondary;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 

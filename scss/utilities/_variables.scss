@@ -21,7 +21,7 @@ $font-weight--bold: 700;
 
 $white: #fff;
 $black: #0b0b0b;
-$gray:  #edeff0;
+$gray:  #a7a7a7;
 
 $violet-blue:   #7477bf;
 $purple-navy:   #4d4c72;
@@ -35,6 +35,10 @@ $line-height:   1.5;
 
 // Box-shadow
 $box-shadow:    0 2px 0 rgba(0, 0, 0, 6%);
+
+// Border
+$border:    2px solid $gray;
+
 
 // Border-radius
 $br:     5px;

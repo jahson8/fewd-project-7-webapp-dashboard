@@ -337,7 +337,7 @@ html {
   line-height: 1.5; }
 
 body {
-  background-color: #edeff0;
+  background-color: #fff;
   font-family: "Work Sans", sans-serif; }
 
 section {
@@ -347,6 +347,10 @@ h1,
 h2,
 h3 {
   font-family: "Crimson Text", serif; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
 
 /* Grid layout Styles
 ========================================================================== */
@@ -361,39 +365,6 @@ h3 {
   grid-template-rows: auto;
   grid-template-areas: "header" "sidebar" "main"; }
 
-.widget-container-full,
-.widget-container-half {
-  width: 95vw; }
-
-@media (min-width: 768px) {
-  .grid-container {
-    grid-template-columns: 55px 1fr;
-    grid-template-areas: "header header" "nav main";
-    grid-column-gap: 1em; }
-
-  .main {
-    grid-template-columns: 50%;
-    grid-column-gap: 1em; }
-
-  .traffic,
-  .social {
-    grid-column: 1 / span 2; }
-
-  .daily,
-  .message,
-  .members {
-    grid-column: 1 / span 1; }
-
-  .mobile,
-  .activity,
-  .settings {
-    grid-column: 2 / span 1; }
-
-  .widget-container-full {
-    width: 90vw; }
-
-  .widget-container-half {
-    width: 40vw; } }
 .site-header {
   grid-area: header; }
 
@@ -403,6 +374,49 @@ h3 {
 .main {
   grid-area: main; }
 
+.widget-container-full,
+.widget-container-half {
+  width: 95vw; }
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas: "header header" "navigation main";
+    grid-column-gap: 1em; }
+
+  .main {
+    grid-template-columns: 50%; }
+
+  .traffic,
+  .social,
+  .members,
+  .activity,
+  .message,
+  .settings {
+    grid-column: 1 / span 2; }
+
+  .daily {
+    grid-column: 1 / span 1; }
+
+  .mobile {
+    grid-column: 2 / span 1; }
+
+  .widget-container-full {
+    width: 90vw; }
+
+  .widget-container-half {
+    width: 40vw; } }
+@media (min-width: 1024px) {
+  .main {
+    grid-column-gap: 1em; }
+
+  .members,
+  .message {
+    grid-column: 1 / span 1; }
+
+  .activity,
+  .settings {
+    grid-column: 2 / span 1; } }
 /*Site-Header Styles
 ========================================================================== */
 /**
@@ -471,31 +485,93 @@ h3 {
 .social-div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center; }
 .social-container {
   display: flex;
+  justify-content: space-around;
   margin-bottom: 1em;
-  width: 90vw; }
+  width: 90vw;
+  border: 2px solid #a7a7a7;
+  border-radius: 5px;
+  padding: 1em; }
 .social-image {
   width: 30%;
   align-self: center; }
 .social-text {
-  margin-left: 1em;
   align-self: flex-start; }
   .social-text P {
-    font-size: 1.5rem;
-    margin-bottom: -1rem; }
+    font-size: 1rem;
+    margin-bottom: -.5rem; }
   .social-text:last-child {
-    font-size: 3rem; }
+    font-size: 2.5rem; }
 .social-icn {
   fill: #4d4c72; }
 @media (min-width: 768px) {
   .social-div {
-    flex-direction: row;
-    justify-content: space-around; }
+    flex-direction: row; }
   .social-container {
-    width: 30vw; } }
+    width: 30vw;
+    margin-right: 1em; } }
+
+/* Members Widget
+========================================================================== */
+/**
+* 
+*/
+.members-container {
+  text-align: center;
+  padding: 1em;
+  margin-bottom: .3em;
+  font-size: .9em;
+  border: 2px solid #a7a7a7; }
+.members .profile-image {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+  margin-right: 1em; }
+@media (min-width: 768px) {
+  .members-container {
+    text-align: left;
+    display: flex; }
+  .members-container p {
+    margin-left: auto; } }
+
+/* Activities Section
+========================================================================== */
+/**
+* 
+*/
+.activity-container {
+  text-align: center;
+  padding: 1em;
+  margin-bottom: .3em;
+  font-size: .9em;
+  border: 2px solid #a7a7a7; }
+.activity .profile-image {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+  margin-right: 1em; }
+.activity .arrow {
+  display: none; }
+@media (min-width: 768px) {
+  .activity-container a {
+    text-align: left;
+    display: flex; }
+  .activity .arrow {
+    display: flex;
+    margin-left: auto;
+    align-self: center;
+    font-size: 2em;
+    color: #7477bf; } }
+
+/* Message section
+========================================================================== */
+/**
+* 
+*/
+.message {
+  border: 2px solid #a7a7a7; }
 
 /*card 
 ========================================================================== */

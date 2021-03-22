@@ -1,0 +1,38 @@
+/* Members Widget
+========================================================================== */
+
+/**
+* 
+*/
+
+.members {
+    &-container{
+        text-align: center;
+        padding: 1em;
+        margin-bottom: .3em;
+        font-size: .9em;
+        border: $border;
+    }
+
+    .profile-image {
+        border-radius: 50%;
+        max-width: 100%;
+        height: auto;
+        margin-right: 1em;
+    }
+
+    @media(min-width: 768px){
+        
+        &-container {
+            text-align: left;
+            display: flex;
+        }
+
+        &-container{
+            p{
+                margin-left: auto;
+            }
+            
+        }
+    }
+}

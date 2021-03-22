@@ -1,0 +1,45 @@
+/* Activities Section
+========================================================================== */
+/**
+* 
+*/
+
+.activity {
+    &-container{
+        text-align: center;
+        padding: 1em;
+        margin-bottom: .3em;
+        font-size: .9em;
+        border: $border;
+    }
+
+    .profile-image {
+        border-radius: 50%;
+        max-width: 100%;
+        height: auto;
+        margin-right: 1em;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    @media(min-width: 768px){
+        
+        &-container a {
+            text-align: left;
+            display: flex;
+        }
+
+        .arrow {
+            display: flex;
+            margin-left: auto;
+            align-self: center;
+            font-size: 2em;
+            color: $violet-blue;
+    }
+}
+
+
+}
+
