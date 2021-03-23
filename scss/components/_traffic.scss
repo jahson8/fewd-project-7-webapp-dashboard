@@ -1,0 +1,19 @@
+.traffic {
+  width: 95vw;
+  &-nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+  }
+
+  @media (min-width: 768px) {
+    &-header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-nav-link {
+      margin-right: 1em;
+    }
+  }
+}

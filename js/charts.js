@@ -17,6 +17,7 @@ const trafficData = {
 
 const  trafficOptions = {
         aspectRatio: 2.5,
+        responsive: true,
         animation: {
             duration: 0
         },

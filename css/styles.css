@@ -352,6 +352,13 @@ a {
   text-decoration: none;
   color: inherit; }
 
+main {
+  padding: 0 1em; }
+  @media (min-width: 769px) {
+    main {
+      padding-right: 0;
+      padding-left: 0; } }
+
 /* Grid layout Styles
 ========================================================================== */
 /**
@@ -376,7 +383,8 @@ a {
 
 .widget-container-full,
 .widget-container-half {
-  width: 95vw; }
+  width: 95vw;
+  position: relative; }
 
 @media (min-width: 768px) {
   .grid-container {
@@ -407,9 +415,6 @@ a {
   .widget-container-half {
     width: 40vw; } }
 @media (min-width: 1024px) {
-  .main {
-    grid-column-gap: 1em; }
-
   .members,
   .message {
     grid-column: 1 / span 1; }
@@ -477,6 +482,19 @@ a {
     .sidebar li {
       margin-top: 1.5em; } }
 
+.traffic {
+  width: 95vw; }
+  .traffic-nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1em; }
+  @media (min-width: 768px) {
+    .traffic-header {
+      display: flex;
+      justify-content: space-between; }
+    .traffic-nav-link {
+      margin-right: 1em; } }
+
 /* Social Section
 ========================================================================== */
 /**
@@ -491,9 +509,12 @@ a {
   justify-content: space-around;
   margin-bottom: 1em;
   width: 90vw;
-  border: 2px solid #a7a7a7;
   border-radius: 5px;
-  padding: 1em; }
+  padding: 1em;
+  background-color: #7477bf;
+  color: #fff;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+  height: 140px; }
 .social-image {
   width: 30%;
   align-self: center; }
@@ -501,11 +522,11 @@ a {
   align-self: flex-start; }
   .social-text P {
     font-size: 1rem;
-    margin-bottom: -.5rem; }
+    margin-bottom: -0.5rem; }
   .social-text:last-child {
     font-size: 2.5rem; }
 .social-icn {
-  fill: #4d4c72; }
+  fill: #fff; }
 @media (min-width: 768px) {
   .social-div {
     flex-direction: row; }
@@ -590,7 +611,11 @@ a {
   padding: 16px;
   display: block;
   background-color: #f5f5f5;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  border: 1px solid gray; }
+  #userField:focus,
+  #messageField:focus {
+    outline: 2px solid #7477bf; }
 
 #messageField {
   height: 150px; }
@@ -600,5 +625,43 @@ a {
   background-color: #7477bf;
   color: #fff;
   cursor: pointer; }
+
+/* Settings section
+========================================================================== */
+/**
+* 
+*/
+.settings {
+  border: 2px solid #a7a7a7;
+  padding: 0 1em 1em; }
+  .settings span,
+  .settings strong {
+    display: inline-block; }
+  .settings span {
+    margin-left: 2em; }
+  .settings label {
+    margin-bottom: 2em; }
+  .settings select {
+    padding: 12px;
+    border: 1px solid gray;
+    background-color: #f5f5f5; }
+  .settings .settings-button {
+    margin-top: 3.8em; }
+
+#save,
+#cancel {
+  padding: 15px 32px;
+  color: #fff;
+  cursor: pointer;
+  width: 48%;
+  border: none;
+  border-radius: 5px; }
+
+#save {
+  background-color: #7477bf;
+  margin-right: .8em; }
+
+#cancel {
+  background-color: #999; }
 
 /*# sourceMappingURL=styles.css.map */

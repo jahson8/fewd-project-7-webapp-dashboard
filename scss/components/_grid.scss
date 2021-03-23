@@ -5,96 +5,88 @@
 * 
 */
 
-%grid{
-    display: grid;
+%grid {
+  display: grid;
 }
 
 .grid-container {
-    @extend %grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-    grid-template-areas:    "header"
-                            "sidebar"
-                            "main";
+  @extend %grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "sidebar"
+    "main";
 }
 
 .main {
-    @extend %grid;
+  @extend %grid;
 }
 
 .site-header {
-    grid-area: header;
+  grid-area: header;
 }
 
 .side-bar {
-    grid-area: nav;
+  grid-area: nav;
 }
 
 .main {
-    grid-area: main;
+  grid-area: main;
 }
 
-
-.widget-container-full, 
+.widget-container-full,
 .widget-container-half {
-    width: 95vw;
+  width: 95vw;
+  position: relative;
 }
-
-
 
 @media (min-width: 768px) {
-    .grid-container {
-        grid-template-columns: 55px 1fr;
-        grid-template-areas:
-        "header header"
-        "navigation main";
-        grid-column-gap: 1em;
-    }
+  .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas:
+      "header header"
+      "navigation main";
+    grid-column-gap: 1em;
+  }
 
-    .main {
-        grid-template-columns: 50% ;
-    }
+  .main {
+    grid-template-columns: 50%;
+  }
 
-    .traffic, 
-    .social,
-    .members,
-    .activity,
-    .message,
-    .settings {
-        grid-column: 1 / span 2;
-    }
-    .daily {
-        grid-column: 1 / span 1;
-    }
+  .traffic,
+  .social,
+  .members,
+  .activity,
+  .message,
+  .settings {
+    grid-column: 1 / span 2;
+  }
+  .daily {
+    grid-column: 1 / span 1;
+  }
 
-    .mobile {
-        grid-column: 2 / span 1;
-    }
-        
-    .widget-container-full {
-        width: 90vw;
-    } 
-     
-    .widget-container-half {
-        width: 40vw;
-    }
-        
-        
+  .mobile {
+    grid-column: 2 / span 1;
+  }
+
+  .widget-container-full {
+    width: 90vw;
+  }
+
+  .widget-container-half {
+    width: 40vw;
+  }
 }
 
-@media(min-width: 1024px){
+@media (min-width: 1024px) {
+  .members,
+  .message {
+    grid-column: 1 / span 1;
+  }
 
-    .main{
-        grid-column-gap: 1em;
-    }
-    .members,
-    .message {
-        grid-column: 1 / span 1;
-    }
-
-    .activity,
-    .settings {
-        grid-column: 2 / span 1;
-    }
+  .activity,
+  .settings {
+    grid-column: 2 / span 1;
+  }
 }
-    
