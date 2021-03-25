@@ -8,4 +8,4 @@ This project is a mock webapp dashboard. The page uses a combination of CSS grid
 
 - HTML
 - CSS
-  \*JavaScript
+- JavaScript
