@@ -360,6 +360,11 @@ main {
       padding-right: 0;
       padding-left: 0; } }
 
+.daily,
+.mobile {
+  border: 2px solid #a7a7a7;
+  padding: 1em 0.3em; }
+
 /* Grid layout Styles
 ========================================================================== */
 /**
@@ -454,11 +459,28 @@ main {
   font-size: 0.4em;
   margin-top: -10px; }
 
-.bell {
-  width: 2.8125rem;
+.bell-container {
+  flex-basis: 2.4rem;
   margin-left: auto;
   border-right: 1px solid;
-  padding-right: 1em; }
+  padding-right: 1em;
+  position: relative; }
+
+.bell {
+  fill: #fff;
+  transition: transform 0.3s ease;
+  cursor: pointer; }
+  .bell:hover {
+    transform: scale(1.2); }
+
+#notification {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: #81c98f;
+  position: absolute;
+  top: -3px;
+  right: 12px; }
 
 .profile-pic {
   border-radius: 50%;

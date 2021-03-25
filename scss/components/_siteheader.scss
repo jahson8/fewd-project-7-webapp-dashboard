@@ -26,11 +26,31 @@
   margin-top: -10px;
 }
 
-.bell {
-  width: 2.8125rem;
+.bell-container {
+  flex-basis: 2.4rem;
   margin-left: auto;
   border-right: 1px solid;
   padding-right: 1em;
+  position: relative;
+}
+
+.bell {
+  fill: $white;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+#notification {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: $color-accent;
+  position: absolute;
+  top: -3px;
+  right: 12px;
 }
 
 .profile-pic {
