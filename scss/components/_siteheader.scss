@@ -6,44 +6,40 @@
 */
 
 .site-header {
-    display: flex;
-    align-items: center;
-    background-color: $violet-blue;
-    color: $white;
-    h1{
-     font-size:1.5em; 
-     margin-left: .6em;  
-    }
-    h3 {
-        font-size: .85em;
-        font-weight: $font-weight--normal;
-        margin-right: 1em;
-    }
-
-    
-}
-
-.trademark{
-    font-size: .4em;
-    margin-top: -10px;
-}
-
-.bell{
-    width: 2.8125rem;
-    margin-left: auto;
-    border-right: 1px solid;
-    padding-right: 1em;
-}
-
-.profile-pic{
-    border-radius: 50%;
-    margin-left: 1em;
+  display: flex;
+  align-items: center;
+  background-color: $violet-blue;
+  color: $white;
+  h1 {
+    font-size: 1.5em;
+    margin-left: 0.6em;
+  }
+  h3 {
+    font-size: 0.85em;
+    font-weight: $font-weight--normal;
     margin-right: 1em;
-    width: 50px;
+  }
+}
+
+.trademark {
+  font-size: 0.4em;
+  margin-top: -10px;
+}
+
+.bell {
+  width: 2.8125rem;
+  margin-left: auto;
+  border-right: 1px solid;
+  padding-right: 1em;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  margin-left: 1em;
+  margin-right: 1em;
+  width: 50px;
 }
 
 .thin {
-    font-weight: $font-weight--normal;
+  font-weight: $font-weight--normal;
 }
-
-

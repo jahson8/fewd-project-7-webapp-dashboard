@@ -33,23 +33,32 @@
     <nav class="sidebar">
       <ul>
         <li>
-          <a href=""><img src="icons/icon-dashboard.svg" alt="dashboard" /></a>
+          <a href="#"><img src="icons/icon-dashboard.svg" alt="dashboard" /></a>
         </li>
         <li>
-          <a href=""><img src="icons/icon-visits.svg" alt="visit" /></a>
+          <a href="#"><img src="icons/icon-visits.svg" alt="visit" /></a>
         </li>
         <li>
-          <a href=""><img src="icons/icon-members.svg" alt="members" /></a>
+          <a href="#"><img src="icons/icon-members.svg" alt="members" /></a>
         </li>
         <li>
-          <a href=""><img src="icons/icon-settings.svg" alt="settings" /></a>
+          <a href="#"><img src="icons/icon-settings.svg" alt="settings" /></a>
         </li>
       </ul>
     </nav>
     <main class="main">
       <div class="main-header">
         <h2 class="headline">Dashboard</h2>
+        <div class="main-header-search">
+          <input
+            type="search"
+            placeholder="Search..."
+            id="search"
+            class="search"
+          />
+        </div>
       </div>
+
       <!-- alert banner -->
       <div class="alert" id="alert">
         <!-- JS will inser alert here -->
@@ -60,10 +69,10 @@
         <div class="traffic-header">
           <h3>Traffic</h3>
           <ul class="traffic-nav">
-            <li class="traffic-nav-link">Hourly</li>
-            <li class="traffic-nav-link">Daily</li>
-            <li class="traffic-nav-link">Weekly</li>
-            <li class="traffic-nav-link">Monthly</li>
+            <li class="traffic-nav-link selected"><a href="#">Hourly</a></li>
+            <li class="traffic-nav-link"><a href="#">Daily</a></li>
+            <li class="traffic-nav-link"><a href="#">Weekly</a></li>
+            <li class="traffic-nav-link"><a href="#">Monthly</a></li>
           </ul>
         </div>
         <div class="widget-container-full">
@@ -242,7 +251,7 @@
       </section>
       <!-- messaging widget -->
       <section class="message">
-        <form class="widget-container">
+        <form class="widget-container" id="form">
           <h3>Message User</h3>
           <input
             type="text"
@@ -288,10 +297,10 @@
         </label>
         <select name="timezone" id="timezone" class="form-field">
           <option selected disabled>Select a Timezone</option>
-          <option value="1">Audi</option>
-          <option value="2">BMW</option>
-          <option value="3">Citroen</option>
-          <option value="4">Ford</option>
+          <option value="PDT">Pacific</option>
+          <option value="EDT">Eastern</option>
+          <option value="MST">Mountain</option>
+          <option value="CDT">Central</option>
         </select>
         <div class="settings-button">
           <button class="button-primary" id="save">Save</button>
@@ -304,6 +313,7 @@
       integrity="sha256-t9UJPrESBeG2ojKTIcFLPGF7nHi2vEc7f5A2KpH/UBU="
       crossorigin="anonymous"
     ></script>
+    <script src="js/app.js"></script>
     <script src="js/charts.js"></script>
   </body>
 </html>

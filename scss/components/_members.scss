@@ -6,33 +6,40 @@
 */
 
 .members {
-    &-container{
-        text-align: center;
-        padding: 1em;
-        margin-bottom: .3em;
-        font-size: .9em;
-        border: $border;
+  &-container {
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 0.3em;
+    font-size: 0.9em;
+    border: $border;
+  }
+
+  .profile-image {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    margin-right: 1em;
+  }
+
+  &-text a {
+    text-decoration: underline;
+    color: $violet-blue;
+    font-weight: $font-weight--bold;
+    &:focus {
+      outline: $outline;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &-container {
+      text-align: left;
+      display: flex;
     }
 
-    .profile-image {
-        border-radius: 50%;
-        max-width: 100%;
-        height: auto;
-        margin-right: 1em;
+    &-container {
+      p {
+        margin-left: auto;
+      }
     }
-
-    @media(min-width: 768px){
-        
-        &-container {
-            text-align: left;
-            display: flex;
-        }
-
-        &-container{
-            p{
-                margin-left: auto;
-            }
-            
-        }
-    }
+  }
 }

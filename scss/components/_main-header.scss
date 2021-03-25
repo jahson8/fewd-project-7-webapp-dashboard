@@ -1,0 +1,19 @@
+.main-header {
+  &-search {
+    align-self: center;
+    justify-self: center;
+    &-input {
+      text-align: center;
+    }
+
+    .search {
+      padding: 8px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &-search {
+      align-self: center;
+    }
+  }
+}

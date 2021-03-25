@@ -6,43 +6,45 @@
 */
 
 .message {
-    border: $border;
-    padding-bottom: 1em;
+  border: $border;
+  padding-bottom: 1em;
 }
 
-.widget-container{
-    width: 95%;
-    margin: 0 auto;
+.widget-container {
+  width: 95%;
+  margin: 0 auto;
 }
 
 .form-field,
 .form-area,
 #send {
-    width: 100%;
-    border-radius: $br;
-    border: none;
+  width: 100%;
+  border-radius: $br;
+  border: none;
 }
-
 
 #userField,
 #messageField {
-    padding: 16px;
-    display: block;
-    background-color: #f5f5f5;
-    margin-bottom: 1em; 
-    border: 1px solid gray;
-    &:focus {
-        outline: 2px solid $violet-blue;
-    }
+  padding: 16px;
+  display: block;
+  background-color: #f5f5f5;
+  margin-bottom: 1em;
+  border: 1px solid gray;
+  &:focus {
+    outline: $outline;
+  }
 }
 
 #messageField {
-    height: 150px;   
+  height: 150px;
 }
 
 #send {
-    padding: 15px 32px;
-    background-color: $violet-blue;
-    color: $white;
-    cursor: pointer;
+  padding: 15px 32px;
+  background-color: $violet-blue;
+  color: $white;
+  cursor: pointer;
+  &:focus {
+    outline: $outline;
+  }
 }

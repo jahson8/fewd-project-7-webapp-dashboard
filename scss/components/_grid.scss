@@ -21,6 +21,11 @@
 
 .main {
   @extend %grid;
+  grid-area: main;
+}
+
+.main-header {
+  @extend %grid;
 }
 
 .site-header {
@@ -31,14 +36,9 @@
   grid-area: nav;
 }
 
-.main {
-  grid-area: main;
-}
-
 .widget-container-full,
 .widget-container-half {
-  width: 95vw;
-  position: relative;
+  width: 90vw;
 }
 
 @media (min-width: 768px) {
@@ -54,19 +54,32 @@
     grid-template-columns: 50%;
   }
 
+  .main-header {
+    grid-template-columns: 150px 1fr;
+  }
+
+  .traffic {
+    width: 90vw;
+  }
+
   .traffic,
   .social,
   .members,
   .activity,
   .message,
-  .settings {
+  .settings,
+  .alert,
+  .main-header {
     grid-column: 1 / span 2;
   }
-  .daily {
+
+  .daily,
+  .headline {
     grid-column: 1 / span 1;
   }
 
-  .mobile {
+  .mobile,
+  .main-header-search {
     grid-column: 2 / span 1;
   }
 

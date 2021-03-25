@@ -29,6 +29,9 @@
         &-container a {
             text-align: left;
             display: flex;
+            &:focus{
+                outline: $outline;
+            }
         }
 
         .arrow {

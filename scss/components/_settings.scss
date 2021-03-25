@@ -6,54 +6,56 @@
 */
 
 .settings {
-    border: $border;
-    padding: 0 1em 1em;
+  border: $border;
+  padding: 0 1em 1em;
 
-    span, 
-    strong {
-        display: inline-block;
-    }
+  span,
+  strong {
+    display: inline-block;
+  }
 
-    span {
-        margin-left: 2em;
-       
-    }
+  span {
+    margin-left: 2em;
+  }
 
-    label {
-        margin-bottom: 2em;
-    }
+  label {
+    margin-bottom: 2em;
+  }
 
-    select {
-        padding: 12px;
-        border: 1px solid gray;
-        background-color: #f5f5f5;
-    }
+  select {
+    padding: 12px;
+    border: 1px solid gray;
+    background-color: #f5f5f5;
+  }
 
-    .settings-button{
-        margin-top: 3.8em;
-    }
-
- 
-
-
-
+  .settings-button {
+    margin-top: 3.8em;
+  }
 }
+
+#save:focus,
+#cancel:focus,
+select:focus,
+span > a:focus {
+  outline: $outline;
+}
+
 
 #save,
 #cancel {
-    padding: 15px 32px;
-    color: $white;
-    cursor: pointer; 
-    width: 48%;
-    border: none;
-    border-radius: $br;
+  padding: 15px 32px;
+  color: $white;
+  cursor: pointer;
+  width: 47%;
+  border: none;
+  border-radius: $br;
 }
 
 #save {
-    background-color: $violet-blue;
-    margin-right: .8em;
+  background-color: $violet-blue;
+  margin-right: 0.8em;
 }
 
 #cancel {
-    background-color: #999;
+  background-color: #999;
 }
