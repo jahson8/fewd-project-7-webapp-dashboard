@@ -374,7 +374,7 @@ main {
   display: grid; }
 
 .grid-container {
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas: "header" "sidebar" "main"; }
 
@@ -508,7 +508,7 @@ main {
       outline: 3px solid black; }
   .sidebar li + li {
     margin-left: 1.5em; }
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     .sidebar ul {
       flex-direction: column; }
     .sidebar li + li {
@@ -721,8 +721,14 @@ main {
     padding: 12px;
     border: 1px solid gray;
     background-color: #f5f5f5; }
-  .settings .settings-button {
-    margin-top: 3.8em; }
+  .settings-button {
+    margin-top: 3.8em;
+    display: flex; }
+  .settings button {
+    margin: 4px;
+    flex-basis: calc(50% - 8px); }
+  .settings .lower-toggle {
+    margin-left: 4.1em; }
 
 #save:focus,
 #cancel:focus,
@@ -735,13 +741,11 @@ span > a:focus {
   padding: 15px 32px;
   color: #fff;
   cursor: pointer;
-  width: 47%;
   border: none;
   border-radius: 5px; }
 
 #save {
-  background-color: #7477bf;
-  margin-right: 0.8em; }
+  background-color: #7477bf; }
 
 #cancel {
   background-color: #999; }
