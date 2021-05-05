@@ -7,5 +7,5 @@ This project is a mock webapp dashboard. The page uses a combination of CSS grid
 ## Languages
 
 - HTML
-- CSS
+- SCSS
 - JavaScript
